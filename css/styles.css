@@ -1,14 +1,14 @@
-:root {
-  /* Color */
-  --primary-text-color: #212121;
+/* :root { */
+/* Color */
+/* --primary-text-color: #212121;
   --accent-color: #2196f3;
   --primary-color: #ffffff;
-  --basic-color: #757575;
+  --basic-color: #757575; */
 
-  /* Transition style */
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+/* Transition style */
+/* --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
-}
+} */
 
 /* ===== body ===== */
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 /*===== reset selectors =====*/
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -43,10 +43,10 @@ img {
 
 .link {
   text-decoration: none;
-}
+} */
 
 /* ===== components =====*/
-.visually__hidden {
+/* .visually__hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -57,36 +57,36 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
-.font-style {
+/* .font-style {
   font-style: normal;
-}
+} */
 
 /*===== Header =====*/
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
   display: flex;
   align-items: center;
-}
+} */
 /* logotype*/
-.logo {
+/* .logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -100,9 +100,9 @@ img {
 }
 .logo__part {
   color: #000000;
-}
+} */
 
-.nav {
+/* .nav {
   display: flex;
   margin-right: auto;
   align-items: center;
@@ -178,11 +178,11 @@ img {
 .contact__link:hover,
 .contact__link:focus {
   color: var(--accent-color);
-}
+} */
 
 /*===== hero =====*/
 
-.hero {
+/* .hero {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
@@ -235,10 +235,10 @@ img {
 .button-primary:hover,
 .button-primary:focus {
   background-color: #188ce8;
-}
+} */
 
 /*===== benefits =====*/
-.benefits__list {
+/* .benefits__list {
   display: flex;
   justify-content: space-between;
 }
@@ -270,7 +270,7 @@ img {
   width: 270px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
+} */
 
 /*===== Case =====*/
 .case {
@@ -435,7 +435,7 @@ img {
   margin-bottom: 20px;
 }
 
-.logo__part--white {
+.logo__part--secondary {
   color: var(--primary-color);
 }
 
