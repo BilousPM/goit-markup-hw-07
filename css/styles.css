@@ -84,14 +84,9 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
-}
-
-.logotype {
-  display: inline-block;
-  margin-right: 93px;
 }
 
 .nav {
@@ -100,33 +95,17 @@ img {
   align-items: center;
 }
 
-.nav-item {
+.nav__item {
   position: relative;
 }
 
-.site-nav {
+.nav__list {
   display: flex;
   align-self: center;
   gap: 50px;
 }
 
-.contact {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.contact-link {
-  display: flex;
-  align-items: center;
-}
-
-.heder-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.nav-link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -139,7 +118,7 @@ img {
   transition: color var(--time) var(--cubic);
 }
 
-.nav-link.current::after {
+.nav__link.current::after {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -152,12 +131,42 @@ img {
   background-color: var(--accent-color);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .nav-link.current {
+.site-nav .nav__link.current {
+  color: var(--accent-color);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+}
+
+.contact__link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--basic-color);
+
+  transition: color var(--time) var(--cubic);
+}
+
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -171,22 +180,24 @@ img {
   color: var(--accent-color);
 }
 
+.logotype {
+  display: inline-block;
+  margin-right: 93px;
+}
+
 .logo-header {
   color: #000000;
 }
 
-.contact-link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--basic-color);
+/* лого з футера */
 
-  transition: color var(--time) var(--cubic);
+.logotype-footer {
+  display: block;
+  margin-bottom: 20px;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
+.footer .logo-header {
+  color: var(--primary-color);
 }
 
 /*===== hero =====*/
@@ -247,16 +258,16 @@ img {
 }
 
 /*===== benefits =====*/
-.benef-list {
+.benefits__list {
   display: flex;
   justify-content: space-between;
 }
 
-.benef-list-item {
+.benefits__item {
   width: 270px;
 }
 
-.benef-list-icon {
+.benefits__icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,7 +277,7 @@ img {
   margin-bottom: 30px;
 }
 
-.benef-item {
+.benefits__subtitle {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -275,7 +286,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.descript-item {
+.benefits__descripnion {
   width: 270px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -292,7 +303,7 @@ img {
   gap: 30px;
 }
 
-.section-title {
+.case__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -326,7 +337,7 @@ img {
 }
 
 /*===== Team =====*/
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
 
@@ -440,18 +451,25 @@ img {
 
 /*===== Footer =====*/
 
-.logotype-footer {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer .logo-header {
-  color: var(--primary-color);
-}
-
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
+
+.footer__adress {
+  margin-right: 70px;
+  min-width: 231px;
+}
+
+.footer__social {
+  width: 206px;
+  margin-right: 93px;
+}
+
+.footer__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 .footer .adres-link {
@@ -478,16 +496,6 @@ img {
   gap: 9px;
 }
 
-.footer-adress-blok {
-  margin-right: 70px;
-  min-width: 231px;
-}
-
-.footer-social-blok {
-  width: 206px;
-  margin-right: 93px;
-}
-
 .footer > .container {
   display: flex;
   align-items: baseline;
@@ -497,7 +505,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-icon-footer {
+.social__icon--footer {
   fill: var(--primary-color);
 }
 
@@ -509,12 +517,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.footer-email-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
 }
 
 .action-text {
