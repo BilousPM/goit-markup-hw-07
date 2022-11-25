@@ -387,25 +387,19 @@ img {
 }
 
 /* ===== Clients ===== */
-
 .clients {
-  padding-top: 94px;
-  padding-bottom: 31px;
-}
-
-.clients-list {
   display: flex;
   justify-items: center;
   align-items: center;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.client-link {
+.clients__link {
   display: flex;
   height: 100%;
   align-items: center;
@@ -419,12 +413,12 @@ img {
   transition-timing-function: var(--cubic);
 }
 
-.client-icon {
+.clients__icon {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
