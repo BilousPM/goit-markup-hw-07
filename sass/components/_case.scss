@@ -1,54 +1,42 @@
-.hero {
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: #2f303a;
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-img.jpg);
-
-    background-repeat: no-repeat;
-    background-position: center;
+.case {
+    padding-top: 0;
 }
 
-.hero__title {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    width: 696px;
+.case__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
     text-align: center;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--primary-color);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
-.button-primary {
-    margin: auto;
-    margin-top: 0px;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
+.case__item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.overlay__text {
+    padding: 27px 0;
 
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     color: var(--primary-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-
-    transition: background-color var(--time) var(--cubic);
-}
-
-.button-primary:hover,
-.button-primary:focus {
-    background-color: #188ce8;
+    background-color: rgba(47, 48, 58, 0.8);
 }
