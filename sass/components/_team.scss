@@ -22,7 +22,7 @@
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -30,7 +30,7 @@
 
 .card__description {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
@@ -59,10 +59,11 @@
     transition-property: background-color, color;
     transition-duration: var(--time);
     transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
 }
 
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
-}

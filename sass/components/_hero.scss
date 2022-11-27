@@ -46,9 +46,9 @@
     cursor: pointer;
 
     transition: background-color var(--time) var(--cubic);
-}
 
-.button-primary:hover,
-.button-primary:focus {
-    background-color: #188ce8;
+    &:hover,
+    &:focus {
+            background-color: #188ce8;
+        }
 }
