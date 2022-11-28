@@ -115,3 +115,8 @@
         color: var(--primary-color);
         }
 }
+
+.form__input-fild:not(:placeholder-shown) {
+    outline-color: var(--accent-color);
+    color: var(--primary-color);
+}
