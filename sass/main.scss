@@ -10,14 +10,16 @@
 @import './components/section';
 @import './components/container';
 @import './components/typography';
-@import './components/header';
 @import './components/logotype';
-@import './components/hero';
-@import './components/benefits';
-@import './components/case';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
 @import './components/modal';
 @import './components/.backdrop';
-@import './components/portfolio';
+
+// loyaut
+@import './loyaut/header';
+@import './loyaut/hero';
+@import './loyaut/benefits';
+@import './loyaut/case';
+@import './loyaut/team';
+@import './loyaut/footer';
+@import './loyaut/clients';
+@import './loyaut/portfolio';
