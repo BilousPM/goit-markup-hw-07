@@ -149,7 +149,7 @@
 
     transition: background-size, background-color, outline-color, var(--time) var(--cubic);
 
-    .&:checked {
+    .consent__checkbox:checked {
         outline-color: var(--accent-color);
         background-color: var(--accent-color);
         background-size: 11px 8px;
